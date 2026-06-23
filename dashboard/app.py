@@ -190,7 +190,7 @@ app.layout = html.Div(
         html.Div(style={"padding": "28px 40px"}, children=[
 
             # KPI cards
-            html.Div(style={"display":"grid","gridTemplateColumns":"repeat(4,1fr)",
+            html.Div(style={"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(200px,1fr))",
                             "gap":"16px","marginBottom":"24px"}, children=[
                 html.Div(style={**CARD,"borderLeft":f"4px solid {COLORS['primary']}"},children=[
                     html.P("Total Employees",style={"margin":0,"color":COLORS["muted"],"fontSize":"12px"}),
@@ -208,14 +208,14 @@ app.layout = html.Div(
             ]),
 
             # Row 1: dept + dist
-            html.Div(style={"display":"grid","gridTemplateColumns":"1fr 1fr",
+            html.Div(style={"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(400px,1fr))",
                             "gap":"16px","marginBottom":"16px"}, children=[
                 html.Div(style=CARD,children=[dcc.Graph(figure=dept_fig(),config={"displayModeBar":False})]),
                 html.Div(style=CARD,children=[dcc.Graph(figure=dist_fig(),config={"displayModeBar":False})]),
             ]),
 
             # Row 2: SHAP + forecast
-            html.Div(style={"display":"grid","gridTemplateColumns":"1fr 1fr",
+            html.Div(style={"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(400px,1fr))",
                             "gap":"16px","marginBottom":"16px"}, children=[
                 html.Div(style=CARD,children=[dcc.Graph(figure=shap_fig(),config={"displayModeBar":False})]),
                 html.Div(style=CARD,children=[dcc.Graph(figure=forecast_fig(),config={"displayModeBar":False})]),
