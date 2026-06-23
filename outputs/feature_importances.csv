@@ -1,0 +1,11 @@
+Feature,Importance
+MaritalStatus_Single,0.13228689
+JobLevel,0.07436253
+MaritalStatus_Married,0.06295222
+Department_Research & Development,0.04867958
+JobRole_Sales Executive,0.041788474
+StockOptionLevel,0.033974472
+BusinessTravel_Travel_Frequently,0.031427294
+JobRole_Laboratory Technician,0.030139102
+BusinessTravel_Travel_Rarely,0.02485072
+Department_Sales,0.024808066

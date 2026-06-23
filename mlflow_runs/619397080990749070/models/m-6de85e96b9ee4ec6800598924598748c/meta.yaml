@@ -1,0 +1,10 @@
+artifact_location: file:///Users/trishashishodiya/Documents/My projects/Churn Prediction/churn-platform/mlflow_runs/619397080990749070/models/m-6de85e96b9ee4ec6800598924598748c/artifacts
+creation_timestamp: 1782240514131
+experiment_id: '619397080990749070'
+last_updated_timestamp: 1782240515839
+model_id: m-6de85e96b9ee4ec6800598924598748c
+model_type: null
+name: logistic_regression
+source_run_id: a01e3c2296c54341a2f8caabe9564149
+status: 2
+status_message: null

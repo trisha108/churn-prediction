@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/trishashishodiya/Documents/My projects/Churn Prediction/churn-platform/mlflow_runs/619397080990749070/a01e3c2296c54341a2f8caabe9564149/artifacts
+end_time: 1782240515841
+entry_point_name: ''
+experiment_id: '619397080990749070'
+lifecycle_stage: active
+run_id: a01e3c2296c54341a2f8caabe9564149
+run_name: logistic_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1782240514101
+status: 3
+tags: []
+user_id: trishashishodiya

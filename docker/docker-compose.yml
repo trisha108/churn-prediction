@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+
+  # ── FastAPI Inference API ────────────────────────────────────────────────
+  churn-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: churn-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../models:/app/models:ro
+    environment:
+      - ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # ── MLflow Tracking Server ───────────────────────────────────────────────
+  mlflow:
+    image: python:3.11-slim
+    container_name: mlflow-server
+    command: >
+      bash -c "pip install mlflow --quiet &&
+               mlflow server
+               --backend-store-uri /mlflow_runs
+               --default-artifact-root /mlflow_runs
+               --host 0.0.0.0
+               --port 5000"
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../mlflow_runs:/mlflow_runs
+    restart: unless-stopped
+
+  # ── Plotly Dash Dashboard ─────────────────────────────────────────────────
+  dashboard:
+    image: python:3.11-slim
+    container_name: churn-dashboard
+    working_dir: /app
+    command: >
+      bash -c "pip install dash plotly pandas --quiet &&
+               python dashboard/app.py"
+    ports:
+      - "8050:8050"
+    volumes:
+      - ../dashboard:/app/dashboard:ro
+      - ../outputs:/app/outputs:ro
+      - ../data:/app/data:ro
+    restart: unless-stopped
+
+networks:
+  default:
+    name: churn-network

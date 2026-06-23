@@ -1,0 +1,22 @@
+artifact_path: file:///Users/trishashishodiya/Documents/My projects/Churn Prediction/churn-platform/mlflow_runs/619397080990749070/models/m-77662dd906bf4840adf19fa91e8114ff/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.9.6
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 2.1.4
+mlflow_version: 3.1.4
+model_id: m-77662dd906bf4840adf19fa91e8114ff
+model_size_bytes: 1391058
+model_uuid: m-77662dd906bf4840adf19fa91e8114ff
+prompts: null
+run_id: 4c013209e1174af3bcb456a58f23df63
+utc_time_created: '2026-06-23 18:48:54.931418'

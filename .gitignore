@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Data (download separately from Kaggle)
+data/WA_Fn-UseC_-HR-Employee-Attrition.csv
+
+# Model artifacts (large binaries)
+models/*.joblib
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# MLflow (optional; include if you want to share run history)
+# mlflow_runs/

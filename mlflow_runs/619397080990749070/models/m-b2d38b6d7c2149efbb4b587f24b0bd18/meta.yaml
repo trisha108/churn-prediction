@@ -1,0 +1,10 @@
+artifact_location: file:///Users/trishashishodiya/Documents/My projects/Churn Prediction/churn-platform/mlflow_runs/619397080990749070/models/m-b2d38b6d7c2149efbb4b587f24b0bd18/artifacts
+creation_timestamp: 1782240516175
+experiment_id: '619397080990749070'
+last_updated_timestamp: 1782240518221
+model_id: m-b2d38b6d7c2149efbb4b587f24b0bd18
+model_type: null
+name: random_forest
+source_run_id: 7c70773ea954482d907e324e10aa84e4
+status: 2
+status_message: null

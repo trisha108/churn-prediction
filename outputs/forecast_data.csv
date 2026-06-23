@@ -1,0 +1,19 @@
+Department,ForecastMonth,ForecastRate,CI_Lower,CI_Upper
+Human Resources,2023-12,3.916,3.679,4.152
+Human Resources,2024-01,4.594,4.358,4.831
+Human Resources,2024-02,5.242,5.006,5.479
+Human Resources,2024-03,5.862,5.626,6.098
+Human Resources,2024-04,6.454,6.218,6.691
+Human Resources,2024-05,7.02,6.784,7.256
+Research & Development,2024-02,0.669,0.36,0.978
+Research & Development,2024-03,0.516,0.207,0.825
+Research & Development,2024-04,0.831,0.522,1.14
+Research & Development,2024-05,0.678,0.369,0.987
+Research & Development,2024-06,0.836,0.527,1.145
+Research & Development,2024-07,0.679,0.37,0.988
+Sales,2024-02,1.314,0.975,1.653
+Sales,2024-03,0.867,0.528,1.206
+Sales,2024-04,0.868,0.528,1.207
+Sales,2024-05,0.923,0.583,1.262
+Sales,2024-06,0.978,0.639,1.317
+Sales,2024-07,0.978,0.639,1.318

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/trishashishodiya/Documents/My projects/Churn Prediction/churn-platform/mlflow_runs/619397080990749070/7c70773ea954482d907e324e10aa84e4/artifacts
+end_time: 1782240518228
+entry_point_name: ''
+experiment_id: '619397080990749070'
+lifecycle_stage: active
+run_id: 7c70773ea954482d907e324e10aa84e4
+run_name: random_forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1782240515845
+status: 3
+tags: []
+user_id: trishashishodiya
