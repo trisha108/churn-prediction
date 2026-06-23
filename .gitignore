@@ -12,7 +12,6 @@ build/
 data/WA_Fn-UseC_-HR-Employee-Attrition.csv
 
 # Model artifacts (large binaries)
-models/*.joblib
 
 # Environment
 .env
@@ -29,3 +28,7 @@ Thumbs.db
 
 # MLflow (optional; include if you want to share run history)
 # mlflow_runs/
+
+
+!outputs/
+!outputs/*.csv
